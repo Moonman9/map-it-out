@@ -26,10 +26,10 @@ router.get('/', (req, res) => {
       return;
     }
     res.json(productDb)
-  });
+  })
   .catch(err => {
     res.status(500).json(err);
-  })
+  });
 });
 
 // get one product
